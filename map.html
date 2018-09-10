@@ -14,6 +14,7 @@
         margin: auto;
         height:650px;
         position: relative;
+        pointer-events:none;
     }
 
     #mapLoad {
@@ -566,9 +567,10 @@ map.on('zoom', function() {
     // console.log(map.getZoom());
     if (map.getZoom() >= 10.2 && initZoom == true) {
         initZoom = false;
-        document.getElementById("mapLoad").style.opacity = 0;
+        document.getElementById('mapLoad').style.opacity = 0;
         document.getElementById('initNote').style.opacity = 1;
-        document.getElementById("mapLoader").style.display = "none";
+        document.getElementById('mapLoader').style.display = "none";
+        document.getElementById('mapHold).style.pointerEvents = "inherit";
     }
 });
 
