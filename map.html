@@ -374,6 +374,7 @@ var map = new mapboxgl.Map({
 
 map.doubleClickZoom.disable();
 map.scrollZoom.disable();
+map.dragPan.disable();
 
 document.getElementById('backBtn').addEventListener("click", backStage);
 document.getElementById('infoBtn').addEventListener("click", displayInfo);
